@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>module Nacho::Helper - Nacho</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="module">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="Common.html">Nacho::Common</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-nacho_select_tag">#nacho_select_tag</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="module-Nacho::Helper">
+  <h1 id="module-Nacho::Helper" class="module">
+    module Nacho::Helper
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-nacho_select_tag" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">nacho_select_tag</span><span
+            class="method-args">(name, choices = nil, options = {}, html_options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="nacho_select_tag-source">
+            <pre><span class="ruby-comment"># File lib/nacho/helper.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">nacho_select_tag</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">choices</span> = <span class="ruby-keyword">nil</span>, <span class="ruby-identifier">options</span> = {}, <span class="ruby-identifier">html_options</span> = {})
+      <span class="ruby-identifier">nacho_options</span> = <span class="ruby-identifier">build_options</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">choices</span>, <span class="ruby-identifier">options</span>, <span class="ruby-identifier">html_options</span>)
+      <span class="ruby-identifier">select_element</span> = <span class="ruby-identifier">select_tag</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">options_for_select</span>(<span class="ruby-identifier">nacho_options</span>[<span class="ruby-value">:choices</span>]), <span class="ruby-identifier">nacho_options</span>[<span class="ruby-value">:options</span>], <span class="ruby-identifier">nacho_options</span>[<span class="ruby-value">:html_options</span>])
+      <span class="ruby-identifier">select_element</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">nacho_options</span>[<span class="ruby-value">:button</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">nacho_options</span>[<span class="ruby-value">:html_options</span>][<span class="ruby-value">:multiple</span>]
+
+    <span class="ruby-identifier">select_element</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
