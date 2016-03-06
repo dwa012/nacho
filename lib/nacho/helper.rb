@@ -1,4 +1,4 @@
-require File.expand_path("../common", __FILE__)
+require 'nacho/common'
 
 module Nacho
   module Helper
