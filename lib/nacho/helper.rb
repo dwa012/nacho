@@ -1,8 +1,8 @@
-require_relative 'common'
+require_relative './common'
 
 module Nacho
   module Helper
-    include Common
+    include Nacho::Common
 
     # A tag helper version for a FormBuilder class. Will create the select and the needed modal that contains the given
     # form for the target model to create.

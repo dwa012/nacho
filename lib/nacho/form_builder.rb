@@ -1,4 +1,4 @@
-require_relative 'common'
+require_relative './common'
 
 # module Nacho
 #   class FormBuilder < ActionView::Helpers::FormBuilder
