@@ -18,6 +18,7 @@ EOC
 
 require 'nacho/form_builder'
 require 'nacho/helper'
+require 'nacho/hooks'
 
 if defined? Rails
   require 'nacho/railtie'
