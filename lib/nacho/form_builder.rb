@@ -1,4 +1,4 @@
-require_relative './common'
+require File.expand_path("../common", __FILE__)
 
 # module Nacho
 #   class FormBuilder < ActionView::Helpers::FormBuilder
